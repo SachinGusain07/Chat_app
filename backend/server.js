@@ -14,7 +14,7 @@ dotenv.config();
 app.use(express.json());// will alow us to extract fields like fullname userame  from req.body
 app.use(cookieParser());
 
-app.use("/api/auth/", authRoutes);
+app.use("/api/auth", authRoutes);
 app.use("/api/messages", messageRoutes);
 app.use("/api/users", userRoutes);
  
